@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-col lg:flex-row">
       <AuthLeftPanel />
       <AuthRightPanel>
         <h2 className="text-center text-xl font-semibold mb-6">
@@ -17,7 +17,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="demo@gmail.com"
-              className="w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div>
@@ -25,7 +25,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="******"
-              className="w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <button
