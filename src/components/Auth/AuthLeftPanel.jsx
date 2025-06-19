@@ -6,7 +6,7 @@ const AuthLeftPanel = () => {
       <img
         src="/PortfolioVue_logo.png" 
         alt="PortfolioVue Logo"
-        className="mb-6 w-52"
+        className="mb-6 w-58"
       />
       <p className="text-center text-lg leading-relaxed font-medium">
         Empowering cross-industry enterprises <br />
