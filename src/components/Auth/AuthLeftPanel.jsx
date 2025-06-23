@@ -5,18 +5,18 @@ const AuthLeftPanel = () => {
     <div
       className="hidden lg:block w-2/3 bg-[#04254d] relative"
       style={{
-        clipPath: "polygon(0 0, 100% 0, 50% 100%, 0% 100%)",
+        clipPath: "polygon(0 0, 100% 0, 70% 100%, 0% 100%)",
         height: "100vh",
       }}
       
     >
-      <div className="absolute top-60 left-10 flex flex-col items-center text-white">
+      <div className="absolute top-60 ml-48 flex flex-col items-center text-white px-30">
         <img
           src="/PortfolioVue_logo.png"
           alt="PortfolioVue Logo"
-          className="mb-6 w-52 lg:w-72"
+          className="mb-6 w-64 lg:w-96"
         />
-        <p className="text-center text-base lg:text-lg leading-relaxed font-medium">
+        <p className="text-center text-lg lg:text-2xl leading-relaxed font-medium">
           Empowering cross-industry enterprises <br />
           to optimize delivery, maximize ROI, <br />
           and surface predictive insights <br />

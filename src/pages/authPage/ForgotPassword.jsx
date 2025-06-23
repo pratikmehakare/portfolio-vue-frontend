@@ -2,8 +2,20 @@ import React from "react";
 import AuthLeftPanel from "../../components/Auth/AuthLeftPanel";
 import AuthRightPanel from "../../components/Auth/AuthRightPanel";
 import { Link } from "react-router-dom";
+import useDebouncedValue from "../../hooks/useDebounceValue";
 
 const ForgotPassword = () => {
+    const [email, setEmail] = useState("");
+
+  const debouncedEmail = useDebouncedValue(email, 600);
+   
+  useEffect(() => {
+    if (debouncedEmail) {
+      console.log("Debounced Email:", debouncedEmail);
+      // Optional: Validate email or call API here
+    }
+  }, [debouncedEmail]);
+
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
       <AuthLeftPanel />
@@ -19,6 +31,8 @@ const ForgotPassword = () => {
             <label className="block text-sm font-medium mb-1">Email</label>
             <input
               type="email"
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
               placeholder="demo@gmail.com"
               className="w-full border border-gray-300 px-4 py-2 rounded-md shadow-sm text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
