@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect}from "react";
 import AuthLeftPanel from "../../components/Auth/AuthLeftPanel";
 import AuthRightPanel from "../../components/Auth/AuthRightPanel";
 import { Link } from "react-router-dom";
